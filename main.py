@@ -12,9 +12,6 @@ def main(page: ft.Page):
         page1.title = 'efe'
         page1.bgcolor = 'green'
         page1.add(
-            ft.Row([
-                ft.Te
-            ])
             ft.Row(
                 [
                     ft.IconButton(ft.icons.HOME, on_click=prov)
@@ -23,20 +20,20 @@ def main(page: ft.Page):
         )
 
     def ontablo(e):
-
-
-    page.add(
-        ft.Row(
-            [
-                u_la
-            ]
-        ),
-        ft.Row([
-            ft.OutlinedButton(text="Показать табло", on_click=ontablo)
-        ])
-    )
-    # ft.app(port=8550, target=man, view=ft.AppView.WEB_BROWSER)
-    ft.app(target=man)
+        page.title = "trg"
+        page.bgcolor = 'white'
+        page.add(
+            ft.Row(
+                [
+                    u_la
+                ]
+            ),
+            ft.Row([
+                ft.OutlinedButton(text="Показать табло", on_click=ontablo)
+            ])
+        )
+        # ft.app(port=8550, target=man, view=ft.AppView.WEB_BROWSER)
+        ft.app(target=man)
 
 
 ft.app(target=main)
